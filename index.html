@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Registration Form</h1>
+    </header>
+
+    <div >
+        <form action="">
+            <table >
+                <tr >
+                    <td >User id: </td>
+                    <td>
+                        <input id="userID" type="text" name="userID"  required value="">
+                        <span id ="statusOfUserID"  ></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password: </td>
+                    <td>
+                        <input  type="password" id="password" name="password" required >
+                        <span id ="statusOfPassword" ></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Name: </td>
+                    <td>
+                        <input type="text" id="name"  required >
+                        <span id ="statusOfName" ></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Address: </td>
+                    <td>
+                      
+                        <input type="text" value="" placeholder="Optional">
+                        <span></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Country: </td>
+                    <td>
+                        <select name="country" id="country" required>
+                            
+                            <option value="" >(Please select a option)</option>
+                            <option >Việt Nam</option>
+                            <option >Hàn Quốc</option>
+                            <option >Trung Quốc</option>
+                            <option >Nhật Bản</option>
+                        </select>
+                        <span id="statusOfCountry"></span></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Zip Code: </td>
+                    <td>
+                        <input  id="zipCode"  type="text" required value="">
+                        <span  id="statusOfZipCode"></span>
+                    </td>
+                </tr>
+                
+                  
+                <tr>
+                    <td>Email: </td>
+                    <td>
+                        <input type="email" required value="" name="email" id="email">
+                        <span id="statusOfemail"></span>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td>Sex: </td>
+                    <td>
+                
+                            <input type="radio" name="gender" id="Male" value="Male" required>Male
+                            <input type="radio" name="gender" id="Female" value="Female">Female
+                            <span id="statusOfgender"></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Language: </td>
+                    <td>
+                        <input checked="checked" type="checkbox" name="Language" id="english" value="English" required onclick="onlyOne(this)">English
+                        <input type="checkbox"  name="Language" id="nonenglish" value="Non English" onclick="onlyOne(this)">Non English
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>About: </td>
+                    <td>
+                        <textarea placeholder="Optional" name="" cols="30" rows="10"></textarea>
+                        <span></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td >
+                        <input type="submit" value="Submit" onclick="">
+                    </td>
+                   
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
